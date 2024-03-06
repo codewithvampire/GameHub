@@ -20,8 +20,10 @@ const HomePage = () => {
         <Box>
           <GameHeading />
           <HStack spacing={5} marginBottom={5}>
-            <PlatformSelector />
             <SortSelector />
+            <Box display={{ base: "none", md: "block" }}>
+              <PlatformSelector />
+            </Box>
           </HStack>
         </Box>
         <GameGrid />
